@@ -183,11 +183,26 @@ def display_drug_info(drug_id: str):
                             mime="image/png"
                         )
                     else:
+                        # RDKit path failed; render with SmilesDrawer in-browser
                         if not RDKIT_AVAILABLE:
-                            st.info("RDKit is not available in this environment; showing a placeholder instead.")
-                        else:
-                            st.warning("Could not generate molecule structure from SMILES.")
-                        viewer._show_fallback_image(drug_info.get('name', 'the drug'))
+                            st.info("RDKit is not available; rendering 2D diagram with SmilesDrawer.")
+                        smiles = drug_info['smiles']
+                        smiles_html = f"""
+                        <div id=\"db-mol-canvas\" style=\"width: 100%; text-align: center;\"></div>
+                        <script src=\"https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js\"></script>
+                        <script>
+                          const smiles = '{smiles}';
+                          const options = {{ width: 400, height: 300, bondThickness: 1.0 }};
+                          const viewer = new SmilesDrawer.Drawer(options);
+                          SmilesDrawer.parse(smiles, function(tree) {{
+                            const svg = viewer.draw(tree, 'light', false);
+                            document.getElementById('db-mol-canvas').innerHTML = svg;
+                          }}, function(err) {{
+                            document.getElementById('db-mol-canvas').innerHTML = '<div style=\"padding: 1rem; color: #b00;\">Failed to render molecule.</div>';
+                          }});
+                        </script>
+                        """
+                        st.components.v1.html(smiles_html, height=330)
                 else:
                     st.warning("No SMILES structure available for this drug.")
                     viewer._show_fallback_image(drug_info.get('name', 'the drug'))
