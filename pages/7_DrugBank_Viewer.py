@@ -188,18 +188,24 @@ def display_drug_info(drug_id: str):
                             st.info("RDKit is not available; rendering 2D diagram with SmilesDrawer.")
                         smiles = drug_info['smiles']
                         smiles_html = f"""
-                        <div id=\"db-mol-canvas\" style=\"width: 100%; text-align: center;\"></div>
-                        <script src=\"https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js\"></script>
+                        <div style=\"width:100%; text-align:center;\">
+                          <canvas id=\"db-mol-canvas\" width=\"400\" height=\"300\"></canvas>
+                        </div>
+                        <script src=\"https://cdn.jsdelivr.net/npm/smiles-drawer@2.0.1/dist/smiles-drawer.min.js\"></script>
                         <script>
-                          const smiles = '{smiles}';
-                          const options = {{ width: 400, height: 300, bondThickness: 1.0 }};
-                          const viewer = new SmilesDrawer.Drawer(options);
-                          SmilesDrawer.parse(smiles, function(tree) {{
-                            const svg = viewer.draw(tree, 'light', false);
-                            document.getElementById('db-mol-canvas').innerHTML = svg;
-                          }}, function(err) {{
-                            document.getElementById('db-mol-canvas').innerHTML = '<div style=\"padding: 1rem; color: #b00;\">Failed to render molecule.</div>';
-                          }});
+                          (function() {{
+                            const smiles = '{smiles}';
+                            const options = {{ width: 400, height: 300, bondThickness: 1.0 }};
+                            const drawer = new SmilesDrawer.Drawer(options);
+                            SmilesDrawer.parse(smiles)
+                              .then(tree => drawer.draw(tree, 'db-mol-canvas', 'light', false))
+                              .catch(err => {{
+                                const ctx = document.getElementById('db-mol-canvas').getContext('2d');
+                                ctx.fillStyle = '#b00';
+                                ctx.font = '14px Arial';
+                                ctx.fillText('Failed to render molecule', 60, 150);
+                              }});
+                          }})();
                         </script>
                         """
                         st.components.v1.html(smiles_html, height=330)
