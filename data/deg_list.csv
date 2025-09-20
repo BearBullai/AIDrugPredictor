@@ -1,0 +1,164 @@
+uniprot.id,gene,organism,logfc,adj.p.val,gene.title,score
+O15439,ABCC4,Homo sapiens (Human),1.99370667,0.000547,ATP binding cassette subfamily C member 4,6.503496425113572
+Q9H2U9,ADAM7,Homo sapiens (Human),1.99965333,0.0308,ADAM metallopeptidase domain 7,3.0223745928760004
+Q9BSE5,AGMAT,Homo sapiens (Human),1.81373333,0.000265,agmatinase,6.487278171655833
+O95994,AGR2,Homo sapiens (Human),1.77939333,0.0246,"anterior gradient 2, protein disulphide isomerase family member",2.863159337957412
+P48448,ALDH3B2,Homo sapiens (Human),1.93149333,0.000787,aldehyde dehydrogenase 3 family member B2,5.995404100599931
+Q9UHK6,AMACR,Homo sapiens (Human),2.12488667,0.0175,alpha-methylacyl-CoA racemase,3.733345030043682
+Q9Y6Q5,AP1M2,Homo sapiens (Human),1.52934,0.000636,adaptor related protein complex 1 mu 2 subunit,4.888600894754255
+Q96PC3,AP1S3,Homo sapiens (Human),1.54207333,0.00403,adaptor related protein complex 1 sigma 3 subunit,3.6927952218313758
+Q5TH69,ARFGEF3,Homo sapiens (Human),1.64308,0.000831,ARFGEF family member 3,5.061341949840804
+Q9UBL0,ARPP21,Homo sapiens (Human),1.56130667,0.0358,cAMP regulated phosphoprotein 21,2.2578320761011312
+Q9BXN1,ASPN,Homo sapiens (Human),1.64746,0.00027,asporin,5.879185453098635
+Q9Y2Q0,ATP8A1,Homo sapiens (Human),1.50638,0.00349,ATPase phospholipid transporting 8A1,3.70143863333723
+Q9P2W7,B3GAT1,Homo sapiens (Human),3.20890667,9.03e-05,"beta-1,3-glucuronyltransferase 1",12.977820553581697
+Q6ZU67,BEND4,Homo sapiens (Human),2.0877,0.00173,BEN domain containing 4,5.766131150498014
+Q7RTS1,BHLHA15,Homo sapiens (Human),1.67684667,0.000589,basic helix-loop-helix family member a15,5.41602141242018
+Q9C002,C15orf48,Homo sapiens (Human),2.33438667,0.000215,chromosome 15 open reading frame 48,8.561506770577683
+E9PGA6,C1QTNF3-AMACR///AMACR,Homo sapiens (Human),2.26926,0.00353,C1QTNF3-AMACR readthrough (NMD candidate)///alpha-methylacyl-CoA racemase,5.56473677205163
+Q5VUE5,C1orf53,Homo sapiens (Human),1.77733333,0.0101,chromosome 1 open reading frame 53,3.546986138344721
+A6NCS6,C2orf72,Homo sapiens (Human),1.68838667,0.000304,chromosome 2 open reading frame 72,5.938269358139849
+Q5JTZ5,C9orf152,Homo sapiens (Human),1.64428,0.000325,chromosome 9 open reading frame 152,5.735440427209657
+P06881,CALCA,Homo sapiens (Human),1.52046667,0.0432,calcitonin related polypeptide alpha,2.0747014836412077
+Q9ULV8,CBLC,Homo sapiens (Human),2.17348667,7.84e-05,Cbl proto-oncogene C,8.92364930898849
+Q96M89,CCDC138,Homo sapiens (Human),1.59588667,0.0419,coiled-coil domain containing 138,2.1987902748610155
+P55774,CCL18,Homo sapiens (Human),1.78115333,0.0479,C-C motif chemokine ligand 18,2.350524794764391
+Q9BXQ6,CECR6,Homo sapiens (Human),1.5606,0.0287,"cat eye syndrome chromosome region, candidate 6",2.4066295119569316
+Q9NSP4,CENPM,Homo sapiens (Human),1.62688,0.0141,centromere protein M,3.0109984100032157
+Q96H22,CENPN,Homo sapiens (Human),1.80866667,0.0153,centromere protein N,3.283288104845598
+Q99674,CGREF1,Homo sapiens (Human),2.19062667,0.000311,cell growth regulator with EF-hand domain 1,7.683052629878234
+P20309,CHRM3,Homo sapiens (Human),1.78863333,0.0169,cholinergic receptor muscarinic 3,3.1696609046641187
+O15551,CLDN3,Homo sapiens (Human),2.1179,0.000121,claudin 3,8.296268864206791
+O14493,CLDN4,Homo sapiens (Human),1.91223333,0.00319,claudin 4,4.773334654514592
+O95471,CLDN7,Homo sapiens (Human),1.57920667,0.000448,claudin 7,5.288324096269778
+P56748,CLDN8,Homo sapiens (Human),2.16216,0.000203,claudin 8,7.983784366665567
+Q8WXI2,CNKSR2,Homo sapiens (Human),1.7475,0.00501,connector enhancer of kinase suppressor of Ras 2,4.019533574046988
+Q14055,COL9A2,Homo sapiens (Human),1.69397333,0.00105,collagen type IX alpha 2 chain,5.046025882494131
+Q8TEY5,CREB3L4,Homo sapiens (Human),1.52512667,0.000523,cAMP responsive element binding protein 3 like 4,5.0047005918684775
+P16562,CRISP2,Homo sapiens (Human),2.09880667,0.0276,cysteine rich secretory protein 2,3.2722304176979438
+P33260,CYP2C18,Homo sapiens (Human),1.5185,0.00584,cytochrome P450 family 2 subfamily C member 18,3.391702091659821
+Q05D60,DEUP1,Homo sapiens (Human),1.88927333,0.0126,deuterosome assembly protein 1,3.5889192659918265
+Q9UQ10,DHDH,Homo sapiens (Human),1.68053333,0.00505,dihydrodiol dehydrogenase,3.859695388369957
+P56177,DLX1,Homo sapiens (Human),3.38752667,0.00114,distal-less homeobox 1,9.969813308445314
+Q07687,DLX2,Homo sapiens (Human),2.34266,0.0277,distal-less homeobox 2,3.6487403442034787
+Q8TE73,DNAH5,Homo sapiens (Human),1.66073333,0.000121,dynein axonemal heavy chain 5,6.505448896279078
+P24855,DNASE1,Homo sapiens (Human),2.7051,0.000909,deoxyribonuclease 1,8.227388839496255
+Q8WZ79,DNASE2B,Homo sapiens (Human),1.97403333,0.0145,deoxyribonuclease 2 beta,3.629520845192645
+P27487,DPP4,Homo sapiens (Human),1.89364667,0.0193,dipeptidyl peptidase 4,3.2465486927032683
+Q9HAK2,EBF2,Homo sapiens (Human),1.87007333,0.00213,early B-cell factor 2,4.996126051493241
+P01133,EGF,Homo sapiens (Human),1.83675333,0.000237,epidermal growth factor,6.65869304755395
+Q9HB65,ELL3,Homo sapiens (Human),1.64628667,2.59e-05,elongation factor for RNA polymerase II 3,7.55102345767889
+O75356,ENTPD5,Homo sapiens (Human),1.79619333,0.000172,ectonucleoside triphosphate diphosphohydrolase 5,6.761718694639401
+P11308,ERG,Homo sapiens (Human),1.57732667,0.0428,"ERG, ETS transcription factor",2.158660242530204
+M5A8F1,ERVH48-1,Homo sapiens (Human),2.16310667,0.0328,endogenous retrovirus group 48 member 1,3.210323187788729
+Q6NZ36,FAAP20,Homo sapiens (Human),1.68919333,0.00992,Fanconi anemia core complex associated protein 20,3.384279120130015
+O60320,FAM189A1,Homo sapiens (Human),1.71787333,0.0192,family with sequence similarity 189 member A1,2.9490710348539415
+Q5SY85,FAM201A,Homo sapiens (Human),1.52589333,0.0355,family with sequence similarity 201 member A,2.212196886096347
+Q96BQ1,FAM3D,Homo sapiens (Human),1.54866667,0.0131,family with sequence similarity 3 member D,2.915719193070202
+Q96KN4,FAM84A,Homo sapiens (Human),1.66857333,0.000591,family with sequence similarity 84 member A,5.386843027639652
+A0A0U1RQF0,FASN,Homo sapiens (Human),1.67622667,6.16e-05,fatty acid synthase,7.057617102152396
+Q99581,FEV,Homo sapiens (Human),2.19868667,0.000309,"FEV, ETS transcription factor",7.717481502435146
+O15552,FFAR2,Homo sapiens (Human),2.84066667,8.94e-05,free fatty acid receptor 2,11.500900568435938
+Q04609,FOLH1,Homo sapiens (Human),2.04544667,0.00979,folate hydrolase (prostate-specific membrane antigen) 1,4.1097468523576355
+Q9HBA9,FOLH1B,Homo sapiens (Human),2.58262,0.00281,folate hydrolase 1B,6.589022084086743
+P55317,FOXA1,Homo sapiens (Human),1.66763333,9.22e-05,forkhead box A1,6.729349211569369
+P28472,GABRB3,Homo sapiens (Human),1.5224,0.00309,gamma-aminobutyric acid type A receptor beta3 subunit,3.8212872109236318
+P22466,GAL,Homo sapiens (Human),1.9842,0.000144,galanin and GMAP prepropeptide,7.622577143184605
+Q02742,GCNT1,Homo sapiens (Human),1.97601333,0.000307,"glucosaminyl (N-acetyl) transferase 1, core 2",6.941461396502534
+Q99988,GDF15,Homo sapiens (Human),2.33158667,0.000322,growth differentiation factor 15,8.142236699272772
+P08034,GJB1,Homo sapiens (Human),1.64622,0.0019,gap junction protein beta 1,4.4797702470394345
+P29033,GJB2,Homo sapiens (Human),1.79404667,0.000862,gap junction protein beta 2,5.497842984986369
+Q8WWB7,GLMP,Homo sapiens (Human),1.78816,9.44e-06,glycosylated lysosomal membrane protein,8.985554078675966
+Q8NBJ4,GOLM1,Homo sapiens (Human),1.97666667,0.000358,golgi membrane protein 1,6.811824562154332
+Q5T848,GPR158,Homo sapiens (Human),1.91798667,0.00482,G protein-coupled receptor 158,4.4438848956749055
+Q9UJ42,GPR160,Homo sapiens (Human),1.81608,0.000246,G protein-coupled receptor 160,6.554350570691694
+Q9H772,GREM2,Homo sapiens (Human),1.52146667,0.00225,"gremlin 2, DAN family BMP antagonist",4.0285660469368905
+Q9NYZ3,GTSE1,Homo sapiens (Human),1.62938,0.00223,G2 and S-phase expressed 1,4.320619022246588
+Q9BXC0,HCAR1,Homo sapiens (Human),1.83888,0.015,hydroxycarboxylic acid receptor 1,3.353949305547689
+Q7L7L0,HIST3H2A,Homo sapiens (Human),2.14054,1.79e-05,"histone cluster 3, H2a",10.1614579730663
+P52926,HMGA2,Homo sapiens (Human),1.68754667,0.0228,high mobility group AT-hook 2,2.771061580867425
+Q92826,HOXB13,Homo sapiens (Human),1.54460667,7.63e-05,homeobox B13,6.359880062236224
+P09630,HOXC6,Homo sapiens (Human),2.57618667,0.00331,homeobox C6,6.389386061742149
+P05981,HPN,Homo sapiens (Human),2.5923,8.2e-06,hepsin,13.18492035046569
+P78413,IRX4,Homo sapiens (Human),1.53664667,0.0108,iroquois homeobox 4,3.0219328374320846
+Q96AZ6,ISG20,Homo sapiens (Human),1.91030667,0.00212,interferon stimulated exonuclease gene 20,5.107518438207614
+Q96PR1,KCNC2,Homo sapiens (Human),1.96001333,0.0266,potassium voltage-gated channel subfamily C member 2,3.087252988530892
+Q9H2S1,KCNN2,Homo sapiens (Human),1.52053333,0.0141,potassium calcium-activated channel subfamily N member 2,2.81417402573447
+Q9UKR0,KLK12,Homo sapiens (Human),1.52698667,0.0275,kallikrein related peptidase 12,2.383118172825998
+Q9H2R5,KLK15,Homo sapiens (Human),1.92782667,0.000591,kallikrein related peptidase 15,6.223819756119
+Q9Y5K2,KLK4,Homo sapiens (Human),1.51507333,0.00856,kallikrein related peptidase 4,3.1324538582129495
+Q86TE4,LUZP2,Homo sapiens (Human),2.36936667,0.00142,leucine zipper protein 2,6.747273082589304
+Q969L2,MAL2,Homo sapiens (Human),1.52258,0.00346,"mal, T-cell differentiation protein 2 (gene/pseudogene)",3.746953513500094
+Q8NBP5,MFSD9,Homo sapiens (Human),1.83007333,0.0038,major facilitator superfamily domain containing 9,4.429173492660098
+P50219,MNX1,Homo sapiens (Human),2.12791333,0.0278,motor neuron and pancreas homeobox 1,3.3109378196487964
+Q96HJ5,MS4A3,Homo sapiens (Human),1.71701333,0.0106,membrane spanning 4-domains A3,3.3905761520132054
+Q9BY19,MS4A8,Homo sapiens (Human),1.70355333,0.000915,membrane spanning 4-domains A8,5.176381213670859
+Q9H195,MUC3B,Homo sapiens (Human),1.70269333,0.00509,"mucin 3B, cell surface associated",3.904756335822809
+Q9UM54,MYO6,Homo sapiens (Human),1.84269333,0.0402,myosin VI,2.571983342169021
+Q58DX5,NAALADL2,Homo sapiens (Human),1.9011,0.00998,N-acetylated alpha-linked acidic dipeptidase-like 2,3.803852927958579
+Q96PU5,NEDD4L,Homo sapiens (Human),1.73235333,0.000579,"neural precursor cell expressed, developmentally down-regulated 4-like, E3 ubiquitin protein ligase",5.608184570407159
+Q6P3R8,NEK5,Homo sapiens (Human),2.05029333,0.00934,NIMA related kinase 5,4.161384261879104
+P01303,NPY,Homo sapiens (Human),1.78955333,0.019,neuropeptide Y,3.0802622251653737
+Q9H255,OR51E2,Homo sapiens (Human),3.73962667,0.000638,olfactory receptor family 51 subfamily E member 2,11.94877780528684
+Q5JQF8,PABPC1L2B///PABPC1L2A,Homo sapiens (Human),1.83965333,1.69e-05,poly(A) binding protein cytoplasmic 1 like 2B///poly(A) binding protein cytoplasmic 1 like 2A,8.779034114994728
+Q96HC4,PDLIM5,Homo sapiens (Human),1.53066,0.0105,PDZ and LIM domain 5,3.0288863874856085
+P20142,PGC,Homo sapiens (Human),1.97200667,0.0124,progastricsin,3.7597851537374325
+O95394,PGM3,Homo sapiens (Human),1.55115333,0.0443,phosphoglucomutase 3,2.0996353675446775
+Q53H76,PLA1A,Homo sapiens (Human),1.58280667,0.00623,phospholipase A1 member A,3.4908990305125953
+A0A3B3IRX2,PLA2G2A,Homo sapiens (Human),2.03105333,0.000578,phospholipase A2 group IIA,6.576697246556283
+Q13093,PLA2G7,Homo sapiens (Human),1.53146667,0.0265,phospholipase A2 group VII,2.4147463908507567
+Q9HBV1,POPDC3,Homo sapiens (Human),2.10477333,0.00111,popeye domain containing 3,6.218925393013687
+Q8WY54,PPM1E,Homo sapiens (Human),1.67405333,0.00563,"protein phosphatase, Mg2+/Mn2+ dependent 1E",3.765768912406149
+Q9ULR3,PPM1H,Homo sapiens (Human),1.87340667,0.00258,"protein phosphatase, Mg2+/Mn2+ dependent 1H",4.849088907345046
+Q96KF2,PRAC1,Homo sapiens (Human),1.534,5.3e-05,prostate cancer susceptibility candidate 1,6.558960816032389
+Q9H6K5,PRR36,Homo sapiens (Human),2.122,0.00994,proline rich 36,4.2495460923089015
+Q13882,PTK6,Homo sapiens (Human),2.02696667,0.00662,protein tyrosine kinase 6,4.4170482246025164
+Q92932,PTPRN2,Homo sapiens (Human),1.54543333,0.00091,"protein tyrosine phosphatase, receptor type N2",4.699598787457377
+O14522,PTPRT,Homo sapiens (Human),1.58535333,0.0317,"protein tyrosine phosphatase, receptor type T",2.3763506901157445
+P32322,PYCR1,Homo sapiens (Human),1.57650667,5.05e-05,pyrroline-5-carboxylate reductase 1,6.7737898014424385
+P20337,RAB3B,Homo sapiens (Human),1.56333333,0.00123,"RAB3B, member RAS oncogene family",4.549448332749425
+P60763,RAC3,Homo sapiens (Human),1.53396,0.00152,"ras-related C3 botulinum toxin substrate 3 (rho family, small GTP binding protein Rac3)",4.322939209836236
+Q9UGC6,RGS17,Homo sapiens (Human),1.54182,0.0163,regulator of G-protein signaling 17,2.75648490777789
+Q8IUC4,RHPN2,Homo sapiens (Human),1.7697,0.000564,rhophilin Rho GTPase binding protein 2,5.74926136968068
+P51449,RORC,Homo sapiens (Human),1.59226667,1.39e-05,RAR related orphan receptor C,7.733615650238698
+O00767,SCD,Homo sapiens (Human),1.94326667,0.0416,stearoyl-CoA desaturase,2.6834699049737605
+"Q8IWL1,Q8IWL2",SFTPA2///SFTPA1,Homo sapiens (Human),2.51808667,0.0103,surfactant protein A2///surfactant protein A1,5.0038480955901115
+Q14190,SIM2,Homo sapiens (Human),2.04021333,0.00094,single-minded family bHLH transcription factor 2,6.175464901291606
+Q8WWT9,SLC13A3,Homo sapiens (Human),2.22231333,0.00127,solute carrier family 13 member 3,6.436255597215977
+P41440,SLC19A1,Homo sapiens (Human),1.54890667,3.35e-05,solute carrier family 19 member 1,6.931287946331767
+Q08AI6,SLC38A11,Homo sapiens (Human),1.70482667,0.00523,solute carrier family 38 member 11,3.889559168379029
+Q53GD3,SLC44A4,Homo sapiens (Human),1.80052,0.000223,solute carrier family 44 member 4,6.5749501279845255
+Q9UMX9,SLC45A2,Homo sapiens (Human),1.50426667,0.0429,solute carrier family 45 member 2,2.0571489151680677
+Q96JT2,SLC45A3,Homo sapiens (Human),1.53971333,0.00972,solute carrier family 45 member 3,3.0984170763017036
+Q9UN76,SLC6A14,Homo sapiens (Human),1.91364667,0.00262,solute carrier family 6 member 14,4.94045913680927
+Q9UPY5,SLC7A11,Homo sapiens (Human),1.73945333,0.00644,solute carrier family 7 member 11,3.8113407744310366
+O94991,SLITRK5,Homo sapiens (Human),1.75095333,0.0328,SLIT and NTRK like family member 5,2.5986356354931357
+K7EJ46,SMIM22,Homo sapiens (Human),1.5048,0.000442,small integral membrane protein 22,5.047968569083486
+Q92485,SMPDL3B,Homo sapiens (Human),2.39159333,0.000167,sphingomyelin phosphodiesterase acid like 3B,9.033726093122302
+C9JP82,SPAG11A///SPAG11B,Homo sapiens (Human),1.67221333,0.00531,sperm associated antigen 11A///sperm associated antigen 11B,3.8041272663376016
+O95238,SPDEF,Homo sapiens (Human),1.53596,0.000371,SAM pointed domain containing ETS transcription factor,5.269304449787674
+Q9Y5Y6,ST14,Homo sapiens (Human),1.71044,3.02e-05,suppression of tumorigenicity 14,7.731176924488371
+Q9UHE8,STEAP1,Homo sapiens (Human),1.57066667,0.002,six transmembrane epithelial antigen of the prostate 1,4.23918222914034
+Q687X5,STEAP4,Homo sapiens (Human),1.70818667,0.000217,STEAP4 metalloreductase,6.258010647648193
+Q8N4C7,STX19,Homo sapiens (Human),1.94142,0.00111,syntaxin 19,5.736269062524007
+P20366,TAC1,Homo sapiens (Human),1.69499333,0.0422,tachykinin precursor 1,2.3300862264540108
+Q8N9U0,TC2N,Homo sapiens (Human),1.53906667,0.0333,"tandem C2 domains, nuclear",2.2740568332767257
+Q08188,TGM3,Homo sapiens (Human),2.37824667,0.0012,transglutaminase 3,6.946427475260785
+P35443,THBS4,Homo sapiens (Human),2.0749,8e-05,thrombospondin 4,8.500678585990416
+Q96CP7,TLCD1,Homo sapiens (Human),1.64232667,8.92e-05,TLC domain containing 1,6.650823803427427
+O76062,TM7SF2,Homo sapiens (Human),1.55910667,0.00139,transmembrane 7 superfamily member 2,4.454344681015123
+Q6UXY8,TMC5,Homo sapiens (Human),1.56350667,0.00171,transmembrane channel like 5,4.326229037317812
+Q8NBL3,TMEM178A,Homo sapiens (Human),1.95812,0.00383,transmembrane protein 178A,4.73238681671656
+A0PJW6,TMEM223,Homo sapiens (Human),1.5787,0.0055,transmembrane protein 223,3.5672894220954374
+Q5T4D3,TMTC4,Homo sapiens (Human),1.5091,0.00944,transmembrane and tetratricopeptide repeat containing 4,3.0559697634047844
+Q96RU7,TRIB3,Homo sapiens (Human),1.52370667,0.00953,tribbles pseudokinase 3,3.079269626747735
+Q9NQ86,TRIM36,Homo sapiens (Human),1.64917333,0.00372,tripartite motif containing 36,4.006595789926981
+Q8NG06,TRIM58,Homo sapiens (Human),2.26689333,0.000532,tripartite motif containing 58,7.422009082580942
+Q8TD43,TRPM4,Homo sapiens (Human),2.59778667,3.47e-06,transient receptor potential cation channel subfamily M member 4,14.183059312980166
+Q7Z2W7,TRPM8,Homo sapiens (Human),1.69895333,0.00723,transient receptor potential cation channel subfamily M member 8,3.6372241188809267
+O60635,TSPAN1,Homo sapiens (Human),1.91206667,0.000449,tetraspanin 1,6.401128190738091
+A6NLP5,TTC36,Homo sapiens (Human),2.37100667,0.000599,tetratricopeptide repeat domain 36,7.640742498678037
+Q6ZN44,UNC5A,Homo sapiens (Human),2.15254,0.00579,unc-5 netrin receptor A,4.815923884434145
+Q96N03,VSTM2L,Homo sapiens (Human),1.75372667,0.00173,V-set and transmembrane domain containing 2 like,4.843712210253461
+Q8IX03,WWC1,Homo sapiens (Human),2.19492,0.0142,WW and C2 domain containing 1,4.055579267146742
+O95409,ZIC2,Homo sapiens (Human),2.37288,0.0294,Zic family member 2,3.6344279866116
