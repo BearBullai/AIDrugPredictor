@@ -406,8 +406,31 @@ def main():
         # Generate 2D interaction diagram (only if RDKit is available)
         try:
             if not RDKit_AVAILABLE:
-                st.info("RDKit is not available in this environment; skipping 2D interaction diagram.")
-                raise RuntimeError("RDKit unavailable")
+                st.info("RDKit is not available; rendering 2D diagram with SmilesDrawer.")
+                smiles = 'CC(=O)OC1=CC=CC=C1C(=O)O'  # Example: Aspirin
+                smiles_html = f"""
+                <div id=\"mol-canvas\" style=\"width: 100%; text-align: center;\"></div>
+                <script src=\"https://unpkg.com/smiles-drawer@2.0.1/dist/smiles-drawer.min.js\"></script>
+                <script>
+                  const smiles = '{smiles}';
+                  const options = {{ width: 400, height: 300, bondThickness: 1.0 }};
+                  const viewer = new SmilesDrawer.Drawer(options);
+                  SmilesDrawer.parse(smiles, function(tree) {{
+                    const svg = viewer.draw(tree, 'light', false);
+                    document.getElementById('mol-canvas').innerHTML = svg;
+                  }}, function(err) {{
+                    document.getElementById('mol-canvas').innerHTML = '<div style="padding: 1rem; color: #b00;">Failed to render molecule.</div>';
+                  }});
+                </script>
+                """
+                st.components.v1.html(smiles_html, height=330)
+                # Also show interaction details
+                st.markdown("### Interaction Details")
+                st.markdown(f"- **H-Bonds:** {top_result['interactions']['h_bonds']}")
+                st.markdown(f"- **Hydrophobic Interactions:** {top_result['interactions']['hydrophobic']}")
+                st.markdown(f"- **Electrostatic Interactions:** {top_result['interactions']['electrostatic']}")
+                # Skip RDKit branch
+                raise SystemExit
             # Generate a sample molecule (in a real app, this would be the actual ligand)
             smiles = 'CC(=O)OC1=CC=CC=C1C(=O)O'  # Example: Aspirin
             mol = Chem.MolFromSmiles(smiles)
@@ -442,15 +465,13 @@ def main():
             else:
                 st.warning("Could not generate 2D structure for the ligand.")
             
+        except SystemExit:
+            pass
         except Exception as e:
             if RDKit_AVAILABLE:
                 st.error(f"Error generating interaction diagram: {str(e)}")
-            # Fallback placeholder image
-            st.image(
-                "https://via.placeholder.com/800x400?text=2D+Interaction+Diagram+Not+Available",
-                use_column_width=True,
-                caption="2D interaction diagram not available"
-            )
+            # Fallback placeholder
+            st.markdown("_2D interaction diagram not available._")
         
         # Save results
         st.download_button(
