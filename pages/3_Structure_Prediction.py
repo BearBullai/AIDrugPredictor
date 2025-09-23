@@ -20,6 +20,7 @@ from typing import Optional, Dict, List, Tuple, Union
 
 # Local imports
 from utils import TargetProcessor
+from utils import fetch_uniprot_sequence, save_fasta
 from config import config, ensure_dir
 from pdb_utils import (
     visualize_pdb, 
@@ -300,8 +301,30 @@ def main():
             sequence = ''.join(line.strip() for line in f if not line.startswith('>'))
     else:
         # Fallback to sequence from dataframe if available
-        sequence_col = 'sequence' if 'sequence' in target_info else 'protein_sequence'
-        sequence = target_info.get(sequence_col, "Sequence not available")
+        # IMPORTANT: check columns on the dataframe, not membership in the Series values
+        if 'sequence' in df.columns:
+            sequence = target_info.get('sequence', None)
+        elif 'protein_sequence' in df.columns:
+            sequence = target_info.get('protein_sequence', None)
+        else:
+            sequence = None
+        # Normalize missing/NaN values
+        if sequence is None or (isinstance(sequence, float) and np.isnan(sequence)):
+            sequence = "Sequence not available"
+
+    # If sequence still not available, try to fetch from UniProt and cache it
+    if not fasta_file.exists() and (not sequence or sequence == "Sequence not available"):
+        try:
+            fetch = fetch_uniprot_sequence(selected_target, organism_id=9606)
+            if fetch:
+                acc, seq = fetch
+                save_fasta(f"{selected_target}|{acc}", seq, fasta_file)
+                sequence = seq
+                st.success(f"Fetched sequence from UniProt: {acc}")
+            else:
+                st.warning("Could not fetch sequence from UniProt for this gene.")
+        except Exception as e:
+            st.warning(f"Sequence fetch error: {e}")
     
     # Display sequence
     with st.expander("View Protein Sequence", expanded=True):
