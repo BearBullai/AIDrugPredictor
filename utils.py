@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from loguru import logger
+import requests
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -209,3 +210,69 @@ def save_analysis_results(df: pd.DataFrame, filename: str, output_dir: Union[str
     
     logger.info(f"Results saved to {filepath}")
     return filepath
+
+
+# ----------------------
+# Protein sequence utils
+# ----------------------
+def fetch_uniprot_sequence(gene_symbol: str, organism_id: int = 9606) -> Optional[Tuple[str, str]]:
+    """Fetch protein sequence from UniProt REST API for a given gene symbol.
+
+    Args:
+        gene_symbol: HGNC gene symbol (e.g., 'AMACR')
+        organism_id: NCBI taxonomy ID (default: 9606 for human)
+
+    Returns:
+        (accession, sequence) if found, otherwise None
+    """
+    try:
+        # Query UniProtKB for reviewed (Swiss-Prot) entries first, then fallback to all
+        base = "https://rest.uniprot.org/uniprotkb/search"
+        common_params = {
+            "query": f"gene_exact:{gene_symbol} AND organism_id:{organism_id}",
+            "fields": "accession,reviewed,protein_name,organism_id,length,sequence",
+            "format": "json",
+            "size": 1,
+        }
+
+        # Prefer reviewed entries
+        params_reviewed = common_params.copy()
+        params_reviewed["query"] += " AND reviewed:true"
+
+        for params in (params_reviewed, common_params):
+            resp = requests.get(base, params=params, timeout=15)
+            resp.raise_for_status()
+            data = resp.json()
+            results = data.get("results", [])
+            if results:
+                entry = results[0]
+                accession = entry.get("primaryAccession")
+                seq = entry.get("sequence", {}).get("value")
+                if accession and seq:
+                    return accession, seq
+        return None
+    except Exception as e:
+        logger.error(f"UniProt fetch failed for {gene_symbol} ({organism_id}): {e}")
+        return None
+
+
+def save_fasta(name: str, sequence: str, out_path: Union[str, Path]) -> Path:
+    """Save a sequence to FASTA file, ensuring parent directory exists.
+
+    Args:
+        name: header/name line to use
+        sequence: amino acid sequence
+        out_path: destination file path
+
+    Returns:
+        Path to written FASTA file
+    """
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "w") as f:
+        f.write(f">{name}\n")
+        # Wrap sequence to 60 chars per line
+        for i in range(0, len(sequence), 60):
+            f.write(sequence[i:i+60] + "\n")
+    logger.info(f"Saved FASTA to {out_path}")
+    return out_path
